@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Componente da categoria dos produtos
 function ProductCategoryRow({ category }) {
   return (
     <tr>
@@ -9,8 +10,9 @@ function ProductCategoryRow({ category }) {
       </th>
     </tr>
   );
-}
+} // Fim
 
+// Componente Dos produtos de cada linha
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
     <span style={{ color: 'red' }}>
@@ -23,7 +25,8 @@ function ProductRow({ product }) {
       <td>{product.price}</td>
     </tr>
   );
-}
+} // Fim
+
 
 function ProductTable({ products }) {
   const rows = [];
@@ -49,8 +52,8 @@ function ProductTable({ products }) {
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Price</th>
+          <th>Nome</th>
+          <th>Preço</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
@@ -58,29 +61,32 @@ function ProductTable({ products }) {
   );
 }
 
+// Componente da barra de pesquisa
 function SearchBar() {
   return (
     <form>
-      <input type="text" placeholder="Search..." />
+      <input type="text" placeholder="Pesquisar..." />
       <label>
         <input type="checkbox" />
         {' '}
-        Only show products in stock
+        Mostrar apenas produtos no estock
       </label>
     </form>
   );
-}
+} // Fim
 
+// Constante Produtos
 const PRODUCTS = [
-  {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
-  {category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit"},
-  {category: "Fruits", price: "$2", stocked: false, name: "Passionfruit"},
-  {category: "Vegetables", price: "$2", stocked: true, name: "Spinach"},
-  {category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin"},
-  {category: "Vegetables", price: "$1", stocked: true, name: "Peas"}
+  {category: "Bolas", price: "2000 KZ", stocked: true, name: "Micassa"},
+  {category: "Bolas", price: "4904 KZ", stocked: true, name: "Jabulane"},
+  {category: "Bolas", price: "1253 KZ", stocked: false, name: "Bola 4"},
+  {category: "Chuteiras", price: "1426 KZ", stocked: true, name: "Adidas"},
+  {category: "Chuteiras", price: "8765 KZ", stocked: false, name: "Nike"},
+  {category: "Chuteiras", price: "5432 KZ", stocked: true, name: "Puma"}
 ];
 
 
+// Componente da tabela completa
 function FilterableProductTable({ products }) {
   return (
     <div>
