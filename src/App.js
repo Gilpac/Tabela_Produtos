@@ -65,12 +65,12 @@ function ProductTable({ products }) {
 function SearchBar() {
   return (
     <form>
-      <input type="text" placeholder="Pesquisar..." /> <br/>
+      <input className='pesquisar' type="text" placeholder="Pesquisar..." /> <br/>
       <br/>
-      <label>
+      <label >
         <input type="checkbox" />
-        {' '}
-        Mostrar apenas produtos no estock
+         {' '}
+       Mostrar apenas produtos no estock 
       </label>
     </form>
   );

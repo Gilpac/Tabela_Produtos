@@ -59,3 +59,14 @@ hr{
   margin-left: 380px;
   margin-right: 380px;
 }
+
+.pesquisar{
+  border-radius: 2%;
+  border-width: 2px;
+  border-color: #000;
+  font-size: 30px;
+}
+
+.marcar{
+  font-size: 200px;
+}
