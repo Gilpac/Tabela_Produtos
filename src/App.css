@@ -65,8 +65,16 @@ hr{
   border-width: 2px;
   border-color: #000;
   font-size: 30px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
-.marcar{
-  font-size: 200px;
+table{
+  width: 600px;
 }
+
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+tr:hover {background-color: #D6EEEE;}
