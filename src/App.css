@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.principal{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.borda{
+  border-style: solid;
+  border-width: medium;
+  border-color: #282c34;
+}

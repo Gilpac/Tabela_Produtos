@@ -52,7 +52,7 @@ function ProductTable({ products }) {
     <table>
       <thead>
         <tr>
-          <th>Nome</th>
+        <th>Nome</th>
           <th>Preço</th>
         </tr>
       </thead>
@@ -65,7 +65,8 @@ function ProductTable({ products }) {
 function SearchBar() {
   return (
     <form>
-      <input type="text" placeholder="Pesquisar..." />
+      <input type="text" placeholder="Pesquisar..." /> <br/>
+      <br/>
       <label>
         <input type="checkbox" />
         {' '}
@@ -89,10 +90,13 @@ const PRODUCTS = [
 // Componente da tabela completa
 function FilterableProductTable({ products }) {
   return (
-    <div>
-      <SearchBar />
+    <div> 
+      <div className='principal'>
+      <SearchBar /></div>
+      <div className='principal'>
       <ProductTable products={products} />
-    </div>
+      </div>
+      </div>
   );
 }
 
