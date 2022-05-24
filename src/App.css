@@ -47,3 +47,15 @@
   border-width: medium;
   border-color: #282c34;
 }
+
+h1{
+  text-align: center;
+}
+hr{
+  border-width: medium;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  margin-left: 380px;
+  margin-right: 380px;
+}

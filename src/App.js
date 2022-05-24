@@ -101,8 +101,13 @@ function FilterableProductTable({ products }) {
 }
 
 function App() {
-
-  return <FilterableProductTable products={PRODUCTS} />;
+  
+  return (
+    <>
+    <h1>Tabela de Produtos<hr/></h1>
+    <FilterableProductTable products={PRODUCTS} />
+    </>
+  );
   
 }
 
